@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-08T15:33:58.203Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="KVQ-TTFg-av0TflvTBHv" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-21T13:27:18.027Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="QKOvR-POe-CHHrUiatNl" version="20.2.5" type="github">
   <diagram id="uXbb6ZCbc5SGIQpMTfbp" name="第 1 页">
     <mxGraphModel dx="3519" dy="1725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -123,17 +123,41 @@
             <mxPoint x="120" y="-730" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_QmvfoHVEJ69r77x3sz3-1" value="AnnotationConfigServletWebServerApplicationContext" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="-690" y="670" width="340" height="134" as="geometry" />
+        <mxCell id="_QmvfoHVEJ69r77x3sz3-1" value="AnnotationConfigServletWebServerApplicationContext" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="-680" y="920" width="340" height="134" as="geometry" />
         </mxCell>
-        <mxCell id="_QmvfoHVEJ69r77x3sz3-2" value="+ reader: AnnotatedBeanDefinitionReader&#xa;+ scanner: ClassPathBeanDefinitionScanner&#xa;+ annotatedClasses: Set&lt;Class&lt;?&gt;&gt;&#xa;+ basePackages String[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_QmvfoHVEJ69r77x3sz3-1">
+        <mxCell id="_QmvfoHVEJ69r77x3sz3-2" value="+ reader: AnnotatedBeanDefinitionReader&#xa;+ scanner: ClassPathBeanDefinitionScanner&#xa;+ annotatedClasses: Set&lt;Class&lt;?&gt;&gt;&#xa;+ basePackages String[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="_QmvfoHVEJ69r77x3sz3-1" vertex="1">
           <mxGeometry y="26" width="340" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="_QmvfoHVEJ69r77x3sz3-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="_QmvfoHVEJ69r77x3sz3-1">
+        <mxCell id="_QmvfoHVEJ69r77x3sz3-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="_QmvfoHVEJ69r77x3sz3-1" vertex="1">
           <mxGeometry y="100" width="340" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="_QmvfoHVEJ69r77x3sz3-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="_QmvfoHVEJ69r77x3sz3-1">
+        <mxCell id="_QmvfoHVEJ69r77x3sz3-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="_QmvfoHVEJ69r77x3sz3-1" vertex="1">
           <mxGeometry y="108" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9yTc4DigsFbiFtTHa7Mj-5" value="ServletWebServerApplicationContext" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-680" y="545" width="340" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="9yTc4DigsFbiFtTHa7Mj-6" value="+ logger: Log&#xa;+ DISPATCHER_SERVLET_NAME = &quot;dispatcherServlet&quot;&#xa;+ webServer WebServer&#xa;+ servletConfig: ServletConfig&#xa;+ serverNameSpace String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="9yTc4DigsFbiFtTHa7Mj-5">
+          <mxGeometry y="26" width="340" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="9yTc4DigsFbiFtTHa7Mj-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="9yTc4DigsFbiFtTHa7Mj-5">
+          <mxGeometry y="110" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9yTc4DigsFbiFtTHa7Mj-8" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="9yTc4DigsFbiFtTHa7Mj-5">
+          <mxGeometry y="118" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9yTc4DigsFbiFtTHa7Mj-9" value="GenericWebApplicationContext" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-680" y="340" width="340" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="9yTc4DigsFbiFtTHa7Mj-10" value="+ servletContext: ServletContext&#xa;+ themeSource: ThemeSource" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="9yTc4DigsFbiFtTHa7Mj-9">
+          <mxGeometry y="26" width="340" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="9yTc4DigsFbiFtTHa7Mj-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="9yTc4DigsFbiFtTHa7Mj-9">
+          <mxGeometry y="70" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9yTc4DigsFbiFtTHa7Mj-12" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="9yTc4DigsFbiFtTHa7Mj-9">
+          <mxGeometry y="78" width="340" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
