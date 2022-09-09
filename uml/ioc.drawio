@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-09T09:04:02.651Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36" etag="6qKBGJVabUfRJSQdzw8i" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-09T09:23:26.823Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36" etag="UR3Lml8TKzv01NoVJa6E" version="20.3.0" type="github">
   <diagram id="uXbb6ZCbc5SGIQpMTfbp" name="第 1 页">
     <mxGraphModel dx="3774" dy="1730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -244,7 +244,7 @@
           <mxGeometry x="-90" y="1120" width="170" height="70" as="geometry" />
         </mxCell>
         <mxCell id="lA209xfvBCFXXogDukNF-38" value="DefaultListableBeanFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="-1210" y="2534" width="340" height="294" as="geometry" />
+          <mxGeometry x="-1338" y="2550" width="340" height="294" as="geometry" />
         </mxCell>
         <mxCell id="lA209xfvBCFXXogDukNF-39" value="+ javaInjectProviderClass: Class&lt;?&gt;&#xa;+ serializableFactories: Map&lt;String, Reference&lt;DefaultListableBeanFactory&gt;&gt;&#xa;+ serializationId: String&#xa;+ allowBeanDefinitionOverriding: boolean&#xa;+ allowEagerClassLoading: boolean&#xa;+ dependencyComparator: Comparator&lt;Object&gt;&#xa;+ autowireCandidateResolver: AutowireCandidateResolver&#xa;+ resolvableDependencies: Map&lt;Class&lt;?&gt;, Object&gt;&#xa;+ beanDefinitionMap: Map&lt;String, BeanDefinition&gt;&#xa;+ mergedBeanDefinitionHolders: Map&lt;String, BeanDefinitionHolder&gt;&#xa;+ allBeanNamesByType: Map&lt;Class&lt;?&gt;, String[]&gt;&#xa;+ singletonBeanNamesByType: Map&lt;Class&lt;?&gt;, String[]&gt;&#xa;+ beanDefinitionNames: List&lt;String&gt;&#xa;+ manualSingletonNames: Set&lt;String&gt;&#xa;+ frozenBeanDefinitionNames: String[]&#xa;+ configurationFrazen:boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lA209xfvBCFXXogDukNF-38">
           <mxGeometry y="26" width="340" height="234" as="geometry" />
@@ -254,6 +254,18 @@
         </mxCell>
         <mxCell id="lA209xfvBCFXXogDukNF-41" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lA209xfvBCFXXogDukNF-38">
           <mxGeometry y="268" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lA209xfvBCFXXogDukNF-42" value="AbstractAutowireCapableBeanFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-1338" y="2240" width="340" height="214" as="geometry" />
+        </mxCell>
+        <mxCell id="lA209xfvBCFXXogDukNF-43" value="+ instantiationStrategy: InstantiationStrategy&#xa;+ parameterNameDiscover: ParameterNameDiscover&#xa;+ allowCircularReferences: boolean&#xa;+ allowRawInjectionDespiteWrapping: boolean&#xa;+ ignoredDependencyTypes: Set&lt;Class&lt;?&gt;&gt;&#xa;+ ignoredDependencyInterfaces: Set&lt;Class&lt;?&gt;&gt;&#xa;+ currentlyCreatedBean: NamedThreadLocal&lt;String&gt;&#xa;+ factoryBeanInstanceCache: ConcurrentMap&lt;String, BeanWrapper&gt;&#xa;+ factoryMethodCandidateCache: ConcurrentMap&lt;Class&lt;?&gt;, Method[]&gt;&#xa;+ filteredPropertyDescriptorsCache: ConcurrentMap&lt;Class&lt;?&gt;, PropertyDescriptor[]&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lA209xfvBCFXXogDukNF-42">
+          <mxGeometry y="26" width="340" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="lA209xfvBCFXXogDukNF-44" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="lA209xfvBCFXXogDukNF-42">
+          <mxGeometry y="180" width="340" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="lA209xfvBCFXXogDukNF-45" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lA209xfvBCFXXogDukNF-42">
+          <mxGeometry y="188" width="340" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
