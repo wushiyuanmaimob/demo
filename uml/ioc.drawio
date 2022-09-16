@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-15T11:07:38.951Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36" etag="KB4wyT26RVgXgaN7pN4U" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-16T06:05:16.507Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36" etag="qBrKRR_NuW1_RSgAnu-r" version="20.3.0" type="github">
   <diagram id="uXbb6ZCbc5SGIQpMTfbp" name="第 1 页">
     <mxGraphModel dx="4601" dy="1730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -331,10 +331,10 @@
           <mxGeometry x="-2030" y="3885" width="290" height="87" as="geometry" />
         </mxCell>
         <mxCell id="d3yX6p8X582zlxXwULMF-22" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ConfigurableWebServerApplicationContext&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setServerNamespace(String): void&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-160" y="3600" width="310" height="77.5" as="geometry" />
+          <mxGeometry x="241.2" y="3720" width="310" height="77.5" as="geometry" />
         </mxCell>
         <mxCell id="d3yX6p8X582zlxXwULMF-23" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;WebServerApplicationContext&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getWebServer(): WebServer&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getServerNamespace(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ hasServerNamespace(ApplicationContext, String): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getServerNamespace(Application): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="200" y="3380" width="310" height="110" as="geometry" />
+          <mxGeometry x="241.2" y="3490" width="310" height="110" as="geometry" />
         </mxCell>
         <mxCell id="d3yX6p8X582zlxXwULMF-24" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.414;entryY=0.977;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.014;exitY=0.673;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="_QmvfoHVEJ69r77x3sz3-2" target="d3yX6p8X582zlxXwULMF-21" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -356,15 +356,6 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-600" y="3770" as="sourcePoint" />
             <mxPoint x="-440" y="3770" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="d3yX6p8X582zlxXwULMF-27" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0.715;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="9yTc4DigsFbiFtTHa7Mj-6" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="-350" y="3770" as="sourcePoint" />
-            <mxPoint y="3680" as="targetPoint" />
-            <Array as="points">
-              <mxPoint y="3920" />
-            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="d3yX6p8X582zlxXwULMF-28" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="9yTc4DigsFbiFtTHa7Mj-9" edge="1">
@@ -495,6 +486,31 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="-192" y="2790" as="sourcePoint" />
             <mxPoint x="-32" y="2790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cPo-FTafMN3Q6p-rea2R-20" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="9yTc4DigsFbiFtTHa7Mj-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-410" y="3830" as="sourcePoint" />
+            <mxPoint x="396" y="3800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="396" y="3904" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cPo-FTafMN3Q6p-rea2R-25" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="d3yX6p8X582zlxXwULMF-22" target="d3yX6p8X582zlxXwULMF-23">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="70" y="3550" as="sourcePoint" />
+            <mxPoint x="230" y="3550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cPo-FTafMN3Q6p-rea2R-27" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1.01;entryY=0.154;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="lA209xfvBCFXXogDukNF-18">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="241.2" y="3760" as="sourcePoint" />
+            <mxPoint x="160" y="1936.9266183035713" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="3760" />
+              <mxPoint x="160" y="2020" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
