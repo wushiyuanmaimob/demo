@@ -1,0 +1,6 @@
+server.port=28080
+os.name=${os.name:MacOS}
+user.country=EN
+user.age=30
+logging.level.root=trace
+logging.level.com.iflytek.com=trace

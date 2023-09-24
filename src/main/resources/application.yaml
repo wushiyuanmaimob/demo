@@ -1,0 +1,95 @@
+server:
+  port: 28083
+os:
+  name: ${os.name:MacOS}
+user:
+  country: EN
+  age: 30
+logging:
+  level:
+    root: info
+    com.iflytek.com: info
+context:
+  initializer:
+    classes: com.iflytek.com.initializer.TestApplicationContextInitializer
+spring:
+  main:
+    allow-circular-references: true
+
+#apigw:
+#  # 是否开启
+#  open: true
+#  # 管理平台应用查看处获取并修改
+#  appId: ef7cc5cf03854d91be4ec39992c85f98
+#  # 管理平台应用查看处获取并修改
+#  appSecret: 4720791DE57ED6C3126E99F393A1498E
+#  # 管理平台应用查看处获取并修改
+#  gmAppSecret: 8E8AFECE7E0A157719B6838441E10097FE6FC102050F25D1B964C619736F8A73
+#  # 核心层ip
+#  host: xc-pro.iflytek.work
+#  # 核心层暴露的http端口
+#  httpPort: 4989
+#  # 核心层暴露的https端口
+#  httpsPort: 443
+#  # 环境 RELEASE=线上  TEST=测试 PRE=预生产
+#  stage: RELEASE
+#  # 签名类型 default：默认签名，gm：国密签名，simple：简易签名
+#  signType: gm
+
+
+#apigw:
+#  # 是否开启
+#  open: true
+#  # 管理平台应用查看处获取并修改
+#  appId: 036525f43e114637af876ee5826ab00d
+#  # 管理平台应用查看处获取并修改
+#  appSecret: 9CE25D1120B7A55267E89FACB3141B27
+#  # 管理平台应用查看处获取并修改
+#  gmAppSecret: 5123C817ADCA716F701CE77EDA7380D483C7162D0D0D568BB529B60866B8802C
+#  # 核心层ip
+#  host: idp.ah.cegn.cn
+#  # 核心层暴露的http端口
+#  httpPort: 4989
+#  # 核心层暴露的https端口
+#  httpsPort: 443
+#  # 环境 RELEASE=线上  TEST=测试 PRE=预生产
+#  stage: RELEASE
+#  # 签名类型 default：默认签名，gm：国密签名，simple：简易签名
+#  signType: gm
+
+
+#apigw:
+#  # 是否开启
+#  open: true
+#  apiGwInfoList:
+#    -
+#      # 管理平台应用查看处获取并修改
+#      appId: ef7cc5cf03854d91be4ec39992c85f98
+#      # 管理平台应用查看处获取并修改
+#      appSecret: 4720791DE57ED6C3126E99F393A1498E
+#      # 管理平台应用查看处获取并修改
+#      gmAppSecret: 8E8AFECE7E0A157719B6838441E10097FE6FC102050F25D1B964C619736F8A73
+#      # 核心层地址，地址之间用英文逗号,分割，不配置端口的默认为-1
+#      hosts: xc-pro.iflytek.work:443
+#      # 环境 RELEASE=线上  TEST=测试 PRE=预生产，默认为RELEASE
+#      stage: RELEASE
+#      # 签名类型 default：默认签名，gm：国密签名，simple：简易签名，默认为gm
+#      signType: gm
+
+apigw:
+  # 是否开启
+  open: true
+  apiGwInfoList:
+    -
+      # 管理平台应用查看处获取并修改
+      appId: 036525f43e114637af876ee5826ab00d
+      # 管理平台应用查看处获取并修改
+      appSecret: 9CE25D1120B7A55267E89FACB3141B27
+      # 管理平台应用查看处获取并修改
+      gmAppSecret: 5123C817ADCA716F701CE77EDA7380D483C7162D0D0D568BB529B60866B8802C
+      # 核心层地址，地址之间用英文逗号,分割，不配置端口的默认为-1
+      hosts: idp.ah.cegn.cn:443
+      # 环境 RELEASE=线上  TEST=测试 PRE=预生产，默认为RELEASE
+      stage: RELEASE
+      # 签名类型 default：默认签名，gm：国密签名，simple：简易签名，默认为gm
+      signType: gm

@@ -1,0 +1,11 @@
+server:
+  port: 28080
+os:
+  name: ${os.name:MacOS}
+user:
+  country: EN
+  age: 30
+logging:
+  level:
+    root: trace
+    com.iflytek.com: trace
